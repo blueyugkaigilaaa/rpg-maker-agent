@@ -1,0 +1,33 @@
+{
+  "name": "rpgmaker-agent",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "archiver": "latest",
+    "better-sqlite3": "^12.6.2",
+    "jsonrepair": "^3.13.2",
+    "next": "^15.5.12",
+    "openai": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "uuid": "latest"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "latest",
+    "@types/archiver": "latest",
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@types/uuid": "latest",
+    "postcss": "latest",
+    "tailwindcss": "latest",
+    "typescript": "latest"
+  }
+}
